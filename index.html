@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixi Shapes</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<main id="app">
+    <section id="hud" aria-label="Shape statistics">
+        <div>Shapes: <span id="shape-count">0</span></div>
+        <div>Area: <span id="shape-area">0</span> px²</div>
+    </section>
+
+    <section id="canvas-section">
+        <div id="canvas-wrapper" role="presentation"></div>
+
+        <div id="bottom-controls" aria-label="Controls">
+            <div class="control-row">
+                <label for="rate-value">Shapes/sec:</label>
+                <button id="rate-decrease" type="button">–</button>
+                <span id="rate-value">1</span>
+                <button id="rate-increase" type="button">+</button>
+            </div>
+
+            <div class="control-row">
+                <label for="gravity-value">Gravity:</label>
+                <button id="gravity-decrease" type="button">–</button>
+                <span id="gravity-value">5</span>
+                <button id="gravity-increase" type="button">+</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
